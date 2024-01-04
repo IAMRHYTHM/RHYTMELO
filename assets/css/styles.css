@@ -93,7 +93,7 @@ section {
   height: 600px;
 }
 section.about {
-  background: url(/assets/img/why-choose.svg);
+  background: url(./assets/img/why-choose.svg);
 }
 section.about .about-us-img {
   height: 450px;
@@ -166,7 +166,7 @@ section.about .social a img {
 }
 section.services {
   background-color: var(--light);
-  background: url(/assets/img/bg-design-2.svg);
+  background: url(./assets/img/bg-design-2.svg);
 }
 
 section.services .card-wrapper {
@@ -217,7 +217,7 @@ section.services .card-wrapper .card:hover p {
 section.why-should-you-choose-us {
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/assets/img/why-choose.svg);
+    url(./assets/img/why-choose.svg);
   color: var(--pure);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
   padding-bottom: 14rem;
