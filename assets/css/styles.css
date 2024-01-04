@@ -1,0 +1,285 @@
+@import "utility.css";
+:root {
+  --primary: #a8f2fe;
+  --dark: #4d448b;
+  --pure: #f5fef9;
+  --ternary: #6cd1e1;
+  --light: #f2f2f2;
+  --bone-white: #f9f6ee;
+  --secondary-text: #0f1035;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smotthing: antialiased;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /*background: var(--dark);*/
+  background: var(--bone-white);
+}
+
+header {
+  background: var(--dark);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+}
+.container {
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container-2 {
+  max-width: 1152px;
+  padding: 0 0;
+  margin: 0 auto;
+}
+header nav .header-menu a {
+  color: var(--pure);
+  text-decoration: none;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+header nav .header-menu a:hover {
+  color: var(--primary);
+}
+header nav {
+  padding: 2rem 0;
+}
+header nav .branding {
+  margin-right: 3rem;
+}
+.hero {
+  padding: 3rem 0;
+}
+.hero .right img {
+  width: 800px;
+}
+.hero .left {
+  color: var(--pure);
+}
+.hero .left h6 {
+  font-size: 1.02rem;
+  color: var(--pure);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+.hero .left h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+.hero .left h1 span {
+  font-size: 4rem;
+  color: var(--pure);
+}
+.hero .left p {
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+.hero .right {
+  margin-top: -7rem;
+}
+
+section {
+  padding: 6rem 0;
+}
+.hero.right.hero-img {
+  width: 800px;
+  height: 600px;
+}
+section.about {
+  background: url(/assets/img/why-choose.svg);
+}
+section.about .about-us-img {
+  height: 450px;
+  width: 450px;
+}
+section.about h1 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+section.about h1 span {
+  color: var(--ternary);
+}
+section.about h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+section.about p {
+  font-family: "Lato", sans-serif;
+  color: var(--secondary-text);
+  line-height: 1.9;
+  margin-bottom: 2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.2));
+}
+
+section.about .social {
+  display: flex;
+}
+
+section.about .social a {
+  background: var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 0.6rem;
+  transition: all 0.3s ease;
+}
+section.about .social a:hover {
+  background: var(--ternary);
+}
+
+section.about .social a img {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  color: var(--primary);
+}
+
+.section-heading {
+  padding: 3rem 0;
+  color: var(--dark);
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 0.5;
+}
+
+.section-heading + p {
+  color: var(--dark);
+  font-family: "Lato", sans-serif;
+  margin-bottom: 6rem;
+  text-align: center;
+}
+.section-heading span {
+  color: var(--secondary-text);
+}
+section.services {
+  background-color: var(--light);
+  background: url(/assets/img/bg-design-2.svg);
+}
+
+section.services .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 6rem;
+}
+section.services .card-wrapper .card {
+  background: var(--bone-white);
+  padding: 3rem 2rem;
+  position: relative;
+  padding-top: 5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+section.services .card-wrapper .card img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: -6rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section.services .card-wrapper .card h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+section.services .card-wrapper .card p {
+  font-family: "Lato", sans-serif;
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+section.services .card-wrapper .card:hover {
+  background: var(--ternary);
+}
+section.services .card-wrapper .card:hover h2,
+section.services .card-wrapper .card:hover p {
+  color: var(--bone-white);
+}
+
+section.why-should-you-choose-us {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/img/why-choose.svg);
+  color: var(--pure);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
+  padding-bottom: 14rem;
+}
+
+section.why-should-you-choose-us h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+section.why-should-you-choose-us p {
+  margin-bottom: 2rem;
+  color: var(--bone-white);
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  line-height: 1.6;
+}
+
+section.review .slider .slide img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+section.review .slider .slide {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 10rem;
+}
+
+section.review .slider .slide p {
+  font-family: "Lato", sans-serif;
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+section.review .slider .slide span {
+  font-size: 0.8rem;
+}
+
+section.review .slider-dots .dots {
+  list-style-type: none;
+  display: flex !important;
+  justify-content: center;
+}
+section.review .slider-dots {
+  margin-top: 3rem;
+}
+section.review .slider-dots button {
+  font-size: 0;
+  width: 8px;
+  height: 5px;
+  margin-right: 0.3rem;
+  border: none;
+  outline: none;
+  background: var(--primary);
+  border-radius: 50%;
+  cursor: pointer;
+}
+section.review .dots li.slick-active button {
+  background: var(--dark);
+  width: 20px;
+}
