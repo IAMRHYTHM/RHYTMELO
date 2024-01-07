@@ -1,0 +1,105 @@
+@import "utility.css";
+@import "style.css";
+
+:root {
+    --primary: #a8f2fe;
+    --dark: #4d448b;
+    --pure: #f5fef9;
+    --ternary: #6cd1e1;
+    --light: #f2f2f2;
+    --bone-white: #f9f6ee;
+    --secondary-text: #0f1035;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing: antialiased;
+  }
+
+  body {
+    font-family: "Martel Sans", sans-serif;
+    background:  url(../img/404.svg),linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    background-size: cover; /* You may need this to ensure the image covers the entire background */
+    background-position: center; /* You may need this to center the image */
+  }
+  
+  ._header {
+    background: #000000;
+  }
+  section {
+    padding: 6rem 0;
+  }
+  
+  section.page-not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+  }
+  
+  section.page-not-found .container {
+    display: flex;
+  }
+  
+  section.page-not-found .left {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-right: 2rem; /* Adjust as needed */
+  }
+  
+  section.page-not-found .left h1 {
+    margin-top: 10%;
+    font-size: 10rem;
+    font-weight: 900;
+    color: var(--bone-white);
+  }
+  
+  section.page-not-found .left p {
+    margin-top: 5%; /* Adjust as needed */
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: var(--bone-white);
+  }
+  
+  section.page-not-found .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: -2rem; /* Adjust as needed */
+    background: url(../assets/im/404.svg) center/cover no-repeat; /* Adjust background properties */
+  }
+  section.page-not-found .right .btn-animated {
+    margin-left: -135%;
+    margin-top: 30%;
+    text-decoration: none !important;
+    color: #000000;
+    background: #E5E900;
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+    text-transform: uppercase;
+  }
+  section.page-not-found .right h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--bone-white);
+    margin-bottom: 1rem;
+    margin-left: -50%;
+    margin-top: 25%; /* Adjust as needed */
+  }
+  
+  /* Optional: If you want to adjust the size of the image */
+  section.page-not-found .right img {
+    max-width: 100%; /* Adjust as needed */
+    height: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  /* Optional: If you want to add additional styling to the image container */
+  section.page-not-found .right img-container {
+    /* Add styles as needed */
+  }
+  

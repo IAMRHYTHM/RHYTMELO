@@ -3,7 +3,10 @@ $(document).ready(function() {
 		arrows: false,
 		dots: true,
 		appendDots: '.slider-dots',
-		dotsClass: 'dots'
+		dotsClass: 'dots',
+		autoplay: true,
+		autoplaySpeed: 3000
+
 	});
 
 
