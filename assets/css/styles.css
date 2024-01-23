@@ -368,3 +368,20 @@ section.work.card-wrapper.card:hover p{
   display: grid;
   grid-column: 1fr 1fr 1fr;
 }
+
+section.blog{
+  background: var(--dark);
+}
+
+section.blog .section-heading{
+  color: var(--pure);
+}
+section.blog .card-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 3rem;  
+}
+
+section.blog .card-wrapper.card{
+  background: var(--pure);
+}
