@@ -382,6 +382,6 @@ section.blog .card-wrapper{
   grid-gap: 3rem;  
 }
 
-section.blog .card-wrapper.card{
+section.blog .card-wrapper .card{
   background: var(--pure);
 }
